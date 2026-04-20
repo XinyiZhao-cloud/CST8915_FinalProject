@@ -1,0 +1,31 @@
+apiVersion: apps/v2
+kind: Deployment
+metadata:
+  name: product-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-service
+  template:
+    metadata:
+      labels:
+        app: product-service
+    spec:
+      containers:
+        - name: product-service
+          image: xyzhao0201/bestbuy-product-service:v1
+          ports:
+            - containerPort: 3001
+---
+apiVersion: v2
+kind: Service
+metadata:
+  name: product-service
+spec:
+  type: ClusterIP
+  selector:
+    app: product-service
+  ports:
+    - port: 3001
+      targetPort: 3001

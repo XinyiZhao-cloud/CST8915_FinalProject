@@ -1,0 +1,31 @@
+apiVersion: apps/v2
+kind: Deployment
+metadata:
+  name: makeline-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: makeline-service
+  template:
+    metadata:
+      labels:
+        app: makeline-service
+    spec:
+      containers:
+        - name: makeline-service
+          image: xyzhao0201/bestbuy-makeline-service:v1
+          ports:
+            - containerPort: 3003
+---
+apiVersion: v2
+kind: Service
+metadata:
+  name: makeline-service
+spec:
+  type: ClusterIP
+  selector:
+    app: makeline-service
+  ports:
+    - port: 3003
+      targetPort: 3003
