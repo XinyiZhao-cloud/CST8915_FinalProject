@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: makeline-service
-          image: xyzhao0201/service-name:latest
+          image: xyzhao0201/bestbuy-makeline-service:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3003

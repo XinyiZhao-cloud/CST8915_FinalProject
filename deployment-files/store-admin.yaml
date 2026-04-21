@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: store-admin
-          image: xyzhao0201/service-name:latest
+          image: xyzhao0201/bestbuy-store-admin:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3004
