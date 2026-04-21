@@ -18,6 +18,12 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 3002
+          env:
+            - name: APP_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: bestbuy-secret
+                  key: APP_ENV
 ---
 apiVersion: v1
 kind: Service

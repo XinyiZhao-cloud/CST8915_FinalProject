@@ -20,7 +20,15 @@ spec:
             - containerPort: 3001
           env:
             - name: MONGO_URL
-              value: "mongodb://mongodb:27017/bestbuy"
+              valueFrom:
+                configMapKeyRef:
+                  name: bestbuy-config
+                  key: MONGO_URL
+            - name: APP_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: bestbuy-secret
+                  key: APP_ENV
 ---
 apiVersion: v1
 kind: Service

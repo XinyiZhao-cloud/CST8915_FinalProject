@@ -20,9 +20,20 @@ spec:
             - containerPort: 3004
           env:
             - name: PRODUCT_SERVICE_URL
-              value: "http://product-service:3001"
+              valueFrom:
+                configMapKeyRef:
+                  name: bestbuy-config
+                  key: PRODUCT_SERVICE_URL
             - name: ORDER_SERVICE_URL
-              value: "http://order-service:3002"
+              valueFrom:
+                configMapKeyRef:
+                  name: bestbuy-config
+                  key: ORDER_SERVICE_URL
+            - name: APP_ENV
+              valueFrom:
+                secretKeyRef:
+                  name: bestbuy-secret
+                  key: APP_ENV
 ---
 apiVersion: v1
 kind: Service
