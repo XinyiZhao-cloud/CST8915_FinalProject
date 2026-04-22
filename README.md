@@ -2,7 +2,7 @@
 
 **Student Name**: Xinyi Zhao    
 **Student ID**: 040953633    
-**Course**: CST8915 Full-stack Cloud-native Development 
+**Course**: CST8915 Full-stack Cloud-native Development  
 **Semester**: Winter 2026   
 
 # 🛒 Cloud-Native Microservices Application (Best Buy Demo)
