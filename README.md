@@ -198,15 +198,11 @@ The video demo includes:
 
 > ⚠️ **Note:** The following demo endpoints were used during testing and presentation.  
 > Azure resources have been **decommissioned to reduce costs**, so these services are currently unavailable.
-| Service       | Endpoint             | Status     |
-|--------------|----------------------|------------|
-| Store Front  | http://20.14.61.92   | ❌ Offline |
-| Admin Panel  | http://4.242.209.167 | ❌ Offline |
 
-### 💡 Deployment Note
-- The application was deployed using Microsoft Azure Kubernetes Service (AKS).
-- Public IP endpoints were used for demo access  
-- Resources were removed after testing to **optimize cost under student subscription limits**  
+| Service       | Endpoint             | Status     |
+|:--------------|:----------------------|:------------|
+| Store Front  | http://20.14.61.92   | ❌ Offline |
+| Admin Panel  | http://4.242.209.167 | ❌ Offline | 
 
 ### 🔄 How to Re-run the Demo
 
@@ -217,7 +213,8 @@ The video demo includes:
 
 ### 💡 Notes
 * Sensitive data is stored using environment variables and Kubernetes Secrets
-* Resources were cleaned up after testing to control Azure costs
+* Public IP endpoints were used for demo access 
+* Resources were removed after testing to **optimize cost under student subscription limits**  
 * The system can be redeployed using CI/CD pipelines
 
 ---- 
