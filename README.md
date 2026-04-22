@@ -235,6 +235,6 @@ Overall, this approach provided a more meaningful learning experience and deepen
 
 ## 🤖 AI Assistance Disclosure
 
-AI tools (ChatGPT) were used to assist with documentation formatting, structure, and general guidance.  
+AI tools (ChatGPT) were used to assist with documentation formatting, structure, general guidance, and code development.
 
 All implementation, configuration, and final technical decisions were completed and verified independently.
