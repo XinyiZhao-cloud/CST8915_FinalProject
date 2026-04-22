@@ -141,16 +141,6 @@ Each microservice has its own GitHub Actions pipeline that:
 
 Pipelines are triggered on code push to the main branch.
 
-## 🌐 Demo Shop Endpoints
-
-> ⚠️ **Note:** The following demo endpoints were used during testing and presentation.  
-> Azure resources have been **decommissioned to reduce costs**, so these services are currently unavailable.
-
-| Service       | Endpoint             | Status     |
-|--------------|----------------------|------------|
-| Store Front  | http://20.14.61.92   | ❌ Offline |
-| Admin Panel  | http://4.242.209.167 | ❌ Offline |
-
 ## 🔗 Microservices Repositories
 
 ### 🛍️ Store Front Service
@@ -203,6 +193,15 @@ The video demo includes:
 ### 🧪 Demo Access (When Active)
 - 🛍️ **Store Front**: User-facing shopping website
 - 🛠️ **Admin Panel**: Management dashboard for products and orders
+
+### 🌐 Demo Shop Endpoints
+
+> ⚠️ **Note:** The following demo endpoints were used during testing and presentation.  
+> Azure resources have been **decommissioned to reduce costs**, so these services are currently unavailable.
+| Service       | Endpoint             | Status     |
+|--------------|----------------------|------------|
+| Store Front  | http://20.14.61.92   | ❌ Offline |
+| Admin Panel  | http://4.242.209.167 | ❌ Offline |
 
 ### 💡 Deployment Note
 - The application was deployed using Microsoft Azure Kubernetes Service (AKS).
