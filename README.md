@@ -59,7 +59,7 @@ Both Store Front and Store Admin are implemented as **server-side rendered web a
 
 This approach allows dynamic content to be generated on the server and sent as HTML to the client, simplifying the architecture by avoiding the need for a separate frontend framework.
 
-It is well suited for this project because:
+It is well-suited for this project because:
 * It reduces complexity for a microservices demo
 * It integrates easily with backend APIs
 * It supports fast development and deployment
@@ -159,7 +159,7 @@ Frontend application for user interaction and product browsing.
 
 
 ### 📦 Product Service
-Handles product catalog, inventory, and product-related APIs.  
+Handles product catalogue, inventory, and product-related APIs.  
 👉 https://github.com/XinyiZhao-cloud/final-product-service
 
 
@@ -177,7 +177,7 @@ Handles order workflow, processing logic, and background operations.
 Provides administrative controls, monitoring, and management features.  
 👉 https://github.com/XinyiZhao-cloud/final-store-admin
 
-## 📁 Deployment Files
+### 📁 Deployment Files
 All Kubernetes YAML manifests are located in:
  ```
 deployment-files/
@@ -197,32 +197,45 @@ The video demo includes:
 * Store Front application demo (running and functionality)  
 * CI/CD pipeline in action (GitHub Actions)  
 
-[![Watch the Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
-
 ### 🔗 Direct Link
-👉 https://www.youtube.com/watch?v=YOUR_VIDEO_ID
+👉 https://youtu.be/XAHxzN3ohYo
 
 ### 🧪 Demo Access (When Active)
-- 🛍️ **Store Front**: User-facing shopping website  
-- 🛠️ **Admin Panel**: Management dashboard for products and orders  
+- 🛍️ **Store Front**: User-facing shopping website
+- 🛠️ **Admin Panel**: Management dashboard for products and orders
 
 ### 💡 Deployment Note
-
 - The application was deployed using Microsoft Azure Kubernetes Service (AKS).
 - Public IP endpoints were used for demo access  
 - Resources were removed after testing to **optimize cost under student subscription limits**  
 
-## 🔄 How to Re-run the Demo
+### 🔄 How to Re-run the Demo
 
 1. Redeploy services to Azure (AKS)  
 2. Update environment variables (service endpoints, connection strings)  
 3. Trigger CI/CD pipeline via GitHub Actions  
 4. Access new public endpoints  
 
-## 💡 Notes
+### 💡 Notes
 * Sensitive data is stored using environment variables and Kubernetes Secrets
 * Resources were cleaned up after testing to control Azure costs
 * The system can be redeployed using CI/CD pipelines
+
+---- 
+
+## 🧩 Challenges and Learning
+
+One challenge I encountered was deciding whether to reuse my previous lab setup or build the application from scratch.
+
+This idea came from my experience in the **CST8916 final project**, where I initially planned to reuse components from **Lab 8: Algonquin College Pet Store** to save time. However, after further consideration, I chose to design and implement the entire system independently.
+
+Building everything from scratch allowed me to structure the application more clearly from the beginning and gain a deeper understanding of how all components are connected, from microservices design to deployment.
+
+It also introduced additional challenges during integration, debugging, and testing. I needed to troubleshoot issues, fix code, and resolve configuration problems across multiple services. Over time, I began to view these situations—such as misconfigurations, testing failures, and debugging—not simply as challenges, but as opportunities to learn and improve my skills.
+
+Through this process, I became more aware of gaps in my knowledge and strengthened my problem-solving abilities.
+
+Overall, this approach provided a more meaningful learning experience and deepened my understanding of cloud-native application development.
 
 ## 🤖 AI Assistance Disclosure
 
