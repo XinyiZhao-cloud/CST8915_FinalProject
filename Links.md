@@ -8,38 +8,6 @@ Applications
 
 # Links
 
-## 🔗 Microservices Repositories
-
-### 🛍️ Store Front Service
-
-Frontend application for user interaction and product browsing.
-👉 https://github.com/XinyiZhao-cloud/final-store-front
-
-
-### 📦 Product Service
-
-Handles product catalog, inventory, and product-related APIs.
-👉 https://github.com/XinyiZhao-cloud/final-product-service
-
-
-### 🧾 Order Service
-
-Manages customer orders, order processing, and status tracking.
-👉 https://github.com/XinyiZhao-cloud/final-order-service
-
-
-### ⚙️ Makeline Service
-
-Handles order workflow, processing logic, and background operations.
-👉 https://github.com/XinyiZhao-cloud/final-makeline-service
-
-
-### 🛠️ Admin Service
-
-Provides administrative controls, monitoring, and management features.
-👉 https://github.com/XinyiZhao-cloud/final-store-admin
-
-
 ### 🔗 Microservices Repositories
 
 | Service          | Description                                      | Repository |
@@ -62,26 +30,6 @@ Provides administrative controls, monitoring, and management features.
 | Store Front  | http://20.14.61.92   | ❌ Offline |
 | Admin Panel  | http://4.242.209.167 | ❌ Offline |
 
-### 🧪 Demo Access (When Active)
-
-- 🛍️ **Store Front**: User-facing shopping website  
-- 🛠️ **Admin Panel**: Management dashboard for products and orders  
-
-
-### 💡 Deployment Note
-
-The application was deployed using:
-- Microsoft Azure (App Services / Containers)
-- Public IP endpoints for demo access
-- Resources were removed after testing to **optimize cost under student subscription limits**
-
-
-### 🔄 How to Re-run the Demo
-
-1. Redeploy services to Azure (App Service or AKS)  
-2. Update environment variables (service endpoints, connection strings)  
-3. Trigger CI/CD pipeline via GitHub Actions  
-4. Access new public endpoints
 
 ## 🎥 Demo Video
 
